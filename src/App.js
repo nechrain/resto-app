@@ -3,11 +3,17 @@ import "./App.css";
 import Home from "./components/home/home";
 import Admin from "./components/admin/admin";
 import Client from "./components/client/client";
+import HomeClient from "./components/client/homeClient";
+import { BrowserRouter, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Home/>
+      <BrowserRouter>
+        <Route path="/" component={Home} />
+        <Route path="/client" component={Client} />
+        <Route path="/admin" component={Admin} />
+      </BrowserRouter>
     </div>
   );
 }

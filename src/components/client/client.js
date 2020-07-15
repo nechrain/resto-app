@@ -1,19 +1,10 @@
 import React, { Component } from "react";
-import "./admin.css";
-import Navbar from "./navbar/navbar";
-
-import {
-  Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  Button,
-} from "reactstrap";
-
+import "./client.css";
+import {Card, CardImg, CardText,CardBody, CardTitle, CardSubtitle, Button,} from "reactstrap";
 import { connect } from "react-redux";
 import { getMenuData } from "../../actions/clientActionCreator";
+
+
 
 export class Client extends React.Component {
   /*****************************get the menu from axios******* */
@@ -24,7 +15,7 @@ export class Client extends React.Component {
   render() {
     return (
       <div>
-        <Navbar />
+     
         <div className="admin">
           <div className="card-group">
             {this.props.menu.map((el) => (
@@ -36,7 +27,7 @@ export class Client extends React.Component {
                     <CardText>{el.description}</CardText>
                     <CardSubtitle>Prix: {el.price} TND</CardSubtitle>
                   </CardBody>
-                  <button>commander</button>
+                  <center><button className="suprim">Commander</button></center>
                 </Card>
               </div>
             ))}

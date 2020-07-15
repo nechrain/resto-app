@@ -1,8 +1,9 @@
 import React from 'react';
 import Logo from "./logo.png";
 import './navbar.css';
+import {Link} from 'react-router-dom'
 
-function Navbar() {
+function NavbarClient() {
     
       return (
         <div className="navbar">
@@ -10,7 +11,12 @@ function Navbar() {
           <div>
             <img className="logos" src={Logo} alt="logo" />
           </div>
-  
+  <router>
+  <ul>
+    <li><Link  to="/">Client</Link></li>
+    <li><Link  to="panier">Shopping bag</Link></li>
+  </ul>
+  </router>
           <div className="info">
        
               <h1>korean grill</h1>
@@ -23,4 +29,4 @@ function Navbar() {
       );
     
   }
-  export default Navbar;
+  export default NavbarClient;

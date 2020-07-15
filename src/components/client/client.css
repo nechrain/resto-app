@@ -17,17 +17,12 @@
     margin: 20px;
 }
 .suprim{
-    background-color: rgb(216, 178, 52);
+    background-color: rgb(209, 135, 92);
     border: transparent;
-   border-radius: 7%;
+   border-radius: 50%;
    color: white;
    margin-left: 5px;
    font-size: 18px;
-}
-.editer{
-    background-color: rgb(115, 205, 221);
-    border: transparent;
-   border-radius: 7%;
-   color: white;
-   font-size: 18px;
+   width: 50%;
+   margin-bottom: 4%;
 }
